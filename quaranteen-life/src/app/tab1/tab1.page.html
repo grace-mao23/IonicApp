@@ -1,86 +1,89 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Life @ Home
-    </ion-title>
-    <ion-buttons slot="primary">
-        <ion-button onclick="toggleReorder()">Toggle</ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-<!-- List of Text Items -->
-<ion-app>
-  <ion-header translucent>
+<body>
+  <ion-header [translucent]="true">
     <ion-toolbar>
-      <ion-title>Checkbox</ion-title>
+      <ion-title>
+        Life @ Home
+      </ion-title>
+      <ion-buttons slot="primary">
+          <ion-button onclick="toggleReorder()">Toggle</ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
-  <ion-content fullscreen>
-    <ion-list>
-      <ion-list-header>You Know You're A Stuy Student When...</ion-list-header>
-        <ion-item>
-          <ion-label>You see the sun rise</ion-label>
-          <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox color="dark" checked slot="start"></ion-checkbox>
-          <ion-label>You watch Talos fail you</ion-label>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox disabled slot="start"></ion-checkbox>
-          <ion-label>Cut class to do work for another</ion-label>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox color="secondary" slot="start"></ion-checkbox>
-          <ion-label>Know what BAC, BEG, and BLT are</ion-label>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox color="danger" checked slot="start"></ion-checkbox>
-          <ion-label>Go up an escalator just to walk down one floor, so you don't have to walk one floor</ion-label>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox color="primary" slot="start"></ion-checkbox>
-          <ion-label>You fall asleep on the train and end up in a different borough</ion-label>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox color="tertiary" checked slot="start"></ion-checkbox>
-          <ion-label>You never wake up after a "quick nap"</ion-label>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
-          <ion-label>Come in 10th period just to hand in a project</ion-label>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox color="primary" disabled slot="start"></ion-checkbox>
-          <ion-label>Break the ice with "I'm tired"</ion-label>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox color="dark" checked slot="start"></ion-checkbox>
-          <ion-label>You went to Wok Wok</ion-label>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
-          <ion-label>You've camped at Whole Foods, Barnes & Nobles, and McDonalds</ion-label>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-        <ion-item>
-          <ion-checkbox color="primary" slot="start"></ion-checkbox>
-          <ion-label>You calculate the worth of something in terms of the number of Halal orders</ion-label>
-          <ion-reorder slot="end"></ion-reorder>
-        </ion-item>
-      </ion-list>
-  </ion-content>
+
+  <!-- List of Text Items -->
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Checkbox</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content fullscreen>
+      <ion-list>
+        <ion-list-header>You Know You're A Stuy Student When...</ion-list-header>
+          <ion-item>
+            <ion-label>You see the sun rise</ion-label>
+            <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox color="dark" checked slot="start"></ion-checkbox>
+            <ion-label>You watch Talos fail you</ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox disabled slot="start"></ion-checkbox>
+            <ion-label>Cut class to do work for another</ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox color="secondary" slot="start"></ion-checkbox>
+            <ion-label>Know what BAC, BEG, and BLT are</ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox color="danger" checked slot="start"></ion-checkbox>
+            <ion-label>Go up an escalator just to walk down one floor, so you don't have to walk one floor</ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label>You fall asleep on the train and end up in a different borough</ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox color="tertiary" checked slot="start"></ion-checkbox>
+            <ion-label>You never wake up after a "quick nap"</ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox color="medium" checked slot="start"></ion-checkbox>
+            <ion-label>Come in 10th period just to hand in a project</ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox color="primary" disabled slot="start"></ion-checkbox>
+            <ion-label>Break the ice with "I'm tired"</ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox color="dark" checked slot="start"></ion-checkbox>
+            <ion-label>You went to Wok Wok</ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+            <ion-label>You've camped at Whole Foods, Barnes & Nobles, and McDonalds</ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox color="primary" slot="start"></ion-checkbox>
+            <ion-label>You calculate the worth of something in terms of the number of Halal orders</ion-label>
+            <ion-reorder slot="end"></ion-reorder>
+          </ion-item>
+        </ion-list>
+    </ion-content>
+  </ion-app>
+
   <script>
       function toggleReorder() {
         const reorderGroup = document.getElementById('reorder');
@@ -90,9 +93,7 @@
         });
       }
   </script>
-</ion-app>
-
-
+</body>
 
 <!---
 <ion-content [fullscreen]="true">
