@@ -5,7 +5,7 @@
     </ion-title>
     <ion-buttons slot="primary">
         <ion-button onclick="toggleReorder()">Toggle</ion-button>
-      </ion-buttons>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -81,17 +81,18 @@
         </ion-item>
       </ion-list>
   </ion-content>
+  <script>
+      function toggleReorder() {
+        const reorderGroup = document.getElementById('reorder');
+        reorderGroup.disabled = !reorderGroup.disabled;
+        reorderGroup.addEventListener('ionItemReorder', ({detail}) => {
+          detail.complete(true);
+        });
+      }
+  </script>
 </ion-app>
 
-<script>
-    function toggleReorder() {
-      const reorderGroup = document.getElementById('reorder');
-      reorderGroup.disabled = !reorderGroup.disabled;
-      reorderGroup.addEventListener('ionItemReorder', ({detail}) => {
-        detail.complete(true);
-      });
-    }
-  </script>
+
 
 <!---
 <ion-content [fullscreen]="true">
